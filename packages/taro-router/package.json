@@ -31,6 +31,6 @@
     "@tarojs/taro": "3.4.4",
     "history": "^5.1.0",
     "query-string": "^7.1.1",
-    "universal-router": "^8.3.0"
+    "universal-router": "^9.1.0"
   }
 }
