@@ -54,7 +54,7 @@
     "babel-preset-taro": "3.4.4",
     "convert-source-map": "^1.8.0",
     "copy-webpack-plugin": "5.1.2",
-    "css-loader": "3.4.2",
+    "css-loader": "5.2.7",
     "csso-webpack-plugin": "2.0.0-beta.1",
     "file-loader": "^6.0.0",
     "fs-extra": "^8.0.1",
