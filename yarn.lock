@@ -74,19 +74,19 @@
     utility-types "^3.10.0"
 
 "@babel/cli@^7.14.5":
-  version "7.14.8"
-  resolved "https://registry.yarnpkg.com/@babel/cli/-/cli-7.14.8.tgz#fac73c0e2328a8af9fd3560c06b096bfa3730933"
-  integrity sha512-lcy6Lymft9Rpfqmrqdd4oTDdUx9ZwaAhAfywVrHG4771Pa6PPT0danJ1kDHBXYqh4HHSmIdA+nlmfxfxSDPtBg==
+  version "7.19.3"
+  resolved "https://registry.yarnpkg.com/@babel/cli/-/cli-7.19.3.tgz#55914ed388e658e0b924b3a95da1296267e278e2"
+  integrity sha512-643/TybmaCAe101m2tSVHi9UKpETXP9c/Ff4mD2tAwkdP6esKIfaauZFc67vGEM6r9fekbEGid+sZhbEnSe3dg==
   dependencies:
+    "@jridgewell/trace-mapping" "^0.3.8"
     commander "^4.0.1"
     convert-source-map "^1.1.0"
     fs-readdir-recursive "^1.1.0"
-    glob "^7.0.0"
+    glob "^7.2.0"
     make-dir "^2.1.0"
     slash "^2.0.0"
-    source-map "^0.5.0"
   optionalDependencies:
-    "@nicolo-ribaudo/chokidar-2" "2.1.8-no-fsevents.2"
+    "@nicolo-ribaudo/chokidar-2" "2.1.8-no-fsevents.3"
     chokidar "^3.4.0"
 
 "@babel/code-frame@7.0.0-beta.44":
@@ -4008,6 +4008,24 @@
     "@babel/runtime" "^7.7.2"
     core-js "^3.4.1"
 
+"@jridgewell/resolve-uri@^3.0.3":
+  version "3.1.0"
+  resolved "https://registry.yarnpkg.com/@jridgewell/resolve-uri/-/resolve-uri-3.1.0.tgz#2203b118c157721addfe69d47b70465463066d78"
+  integrity sha512-F2msla3tad+Mfht5cJq7LSXcdudKTWCVYUgw6pLFOOHSTtZlj6SWNYAp+AhuqLmWdBO2X5hPrLcu8cVP8fy28w==
+
+"@jridgewell/sourcemap-codec@^1.4.10":
+  version "1.4.14"
+  resolved "https://registry.yarnpkg.com/@jridgewell/sourcemap-codec/-/sourcemap-codec-1.4.14.tgz#add4c98d341472a289190b424efbdb096991bb24"
+  integrity sha512-XPSJHWmi394fuUuzDnGz1wiKqWfo1yXecHQMRf2l6hztTO+nPru658AyDngaBe7isIxEkRsPR3FZh+s7iVa4Uw==
+
+"@jridgewell/trace-mapping@^0.3.8":
+  version "0.3.15"
+  resolved "https://registry.yarnpkg.com/@jridgewell/trace-mapping/-/trace-mapping-0.3.15.tgz#aba35c48a38d3fd84b37e66c9c0423f9744f9774"
+  integrity sha512-oWZNOULl+UbhsgB51uuZzglikfIKSUBO/M9W2OfEjn7cmqoAiCgmv9lyACTUacZwBz0ITnJ2NqjU8Tx0DHL88g==
+  dependencies:
+    "@jridgewell/resolve-uri" "^3.0.3"
+    "@jridgewell/sourcemap-codec" "^1.4.10"
+
 "@koale/useworker@^3.2.1":
   version "3.4.0"
   resolved "https://registry.yarnpkg.com/@koale/useworker/-/useworker-3.4.0.tgz#773ac623212bfaed377ff5e6cd44240ed52e40ff"
@@ -5155,22 +5173,10 @@
     call-me-maybe "^1.0.1"
     glob-to-regexp "^0.3.0"
 
-"@nicolo-ribaudo/chokidar-2@2.1.8-no-fsevents.2":
-  version "2.1.8-no-fsevents.2"
-  resolved "https://registry.yarnpkg.com/@nicolo-ribaudo/chokidar-2/-/chokidar-2-2.1.8-no-fsevents.2.tgz#e324c0a247a5567192dd7180647709d7e2faf94b"
-  integrity sha512-Fb8WxUFOBQVl+CX4MWet5o7eCc6Pj04rXIwVKZ6h1NnqTo45eOQW6aWyhG25NIODvWFwTDMwBsYxrQ3imxpetg==
-  dependencies:
-    anymatch "^2.0.0"
-    async-each "^1.0.1"
-    braces "^2.3.2"
-    glob-parent "^5.1.2"
-    inherits "^2.0.3"
-    is-binary-path "^1.0.0"
-    is-glob "^4.0.0"
-    normalize-path "^3.0.0"
-    path-is-absolute "^1.0.0"
-    readdirp "^2.2.1"
-    upath "^1.1.1"
+"@nicolo-ribaudo/chokidar-2@2.1.8-no-fsevents.3":
+  version "2.1.8-no-fsevents.3"
+  resolved "https://registry.yarnpkg.com/@nicolo-ribaudo/chokidar-2/-/chokidar-2-2.1.8-no-fsevents.3.tgz#323d72dd25103d0c4fbdce89dadf574a787b1f9b"
+  integrity sha512-s88O1aVtXftvp5bCPB7WnmXc5IwOZZ7YPuwNPt+GtOOXpPvad1LfbmjYv+qII7zP6RU2QGnqve27dnLycEnyEQ==
 
 "@nodelib/fs.scandir@2.1.5":
   version "2.1.5"
@@ -5764,6 +5770,14 @@
   dependencies:
     "@rollup/pluginutils" "^3.1.0"
     magic-string "^0.25.7"
+
+"@rollup/plugin-typescript@^8.3.1":
+  version "8.5.0"
+  resolved "https://registry.yarnpkg.com/@rollup/plugin-typescript/-/plugin-typescript-8.5.0.tgz#7ea11599a15b0a30fa7ea69ce3b791d41b862515"
+  integrity sha512-wMv1/scv0m/rXx21wD2IsBbJFba8wGF3ErJIr6IKRfRj49S85Lszbxb4DCo8iILpluTjk2GAAu9CoZt4G3ppgQ==
+  dependencies:
+    "@rollup/pluginutils" "^3.1.0"
+    resolve "^1.17.0"
 
 "@rollup/pluginutils@^3.1.0":
   version "3.1.0"
@@ -16053,7 +16067,19 @@ glob@^6.0.1:
     once "^1.3.0"
     path-is-absolute "^1.0.0"
 
-glob@^7.0.0, glob@^7.0.3, glob@^7.0.5, glob@^7.1.1, glob@^7.1.2, glob@^7.1.3, glob@^7.1.4, glob@^7.1.6, glob@^7.1.7, glob@~7.1.1:
+glob@^7.0.0, glob@^7.0.3, glob@^7.0.5, glob@^7.1.1, glob@^7.1.2, glob@^7.1.3, glob@^7.1.4, glob@^7.1.6, glob@^7.1.7, glob@^7.2.0:
+  version "7.2.3"
+  resolved "https://registry.yarnpkg.com/glob/-/glob-7.2.3.tgz#b8df0fb802bbfa8e89bd1d938b4e16578ed44f2b"
+  integrity sha512-nFR0zLpU2YCaRxwoCJvL6UvCH2JFyFVIvwTLsIf21AuHlMskA1hhTdk+LlYJtOlYt9v6dvszD2BGRqBL+iQK9Q==
+  dependencies:
+    fs.realpath "^1.0.0"
+    inflight "^1.0.4"
+    inherits "2"
+    minimatch "^3.1.1"
+    once "^1.3.0"
+    path-is-absolute "^1.0.0"
+
+glob@~7.1.1:
   version "7.1.7"
   resolved "https://registry.yarnpkg.com/glob/-/glob-7.1.7.tgz#3b193e9233f01d42d0b3f78294bbeeb418f94a90"
   integrity sha512-OvD9ENzPLbegENnYP5UUfJIirTg4+XwMWGaQfQTY0JenxNvvIKP3U3/tAQSPIu/lHxXYSZmpXlUHeqAIdKzBLQ==
@@ -21131,6 +21157,13 @@ minimalistic-crypto-utils@^1.0.1:
   dependencies:
     brace-expansion "^1.1.7"
 
+minimatch@^3.1.1:
+  version "3.1.2"
+  resolved "https://registry.yarnpkg.com/minimatch/-/minimatch-3.1.2.tgz#19cd194bfd3e428f049a70817c038d89ab4be35b"
+  integrity sha512-J7p63hRiAjw1NDEww1W7i37+ByIrOWO5XQQAzZ3VOcL0PNybwpfmV/N05zFAzwQ9USyEcX6t3UO+K5aqBQOIHw==
+  dependencies:
+    brace-expansion "^1.1.7"
+
 minimist-options@4.1.0, minimist-options@^4.0.2:
   version "4.1.0"
   resolved "https://registry.yarnpkg.com/minimist-options/-/minimist-options-4.1.0.tgz#c0655713c53a8a2ebd77ffa247d342c40f010619"
@@ -25116,7 +25149,7 @@ query-string@^6.1.0, query-string@^6.13.1, query-string@^6.13.8:
     split-on-first "^1.0.0"
     strict-uri-encode "^2.0.0"
 
-query-string@^7.0.0:
+query-string@^7.0.0, query-string@^7.1.1:
   version "7.1.1"
   resolved "https://registry.yarnpkg.com/query-string/-/query-string-7.1.1.tgz#754620669db978625a90f635f12617c271a088e1"
   integrity sha512-MplouLRDHBZSG9z7fpuAAcI7aAYjDLhtsiVZsevsfaHWDS2IDdORKbSd1kWUA+V4zyva/HZoSfpwnYMMQDhb0w==
@@ -26425,6 +26458,13 @@ rollup-plugin-copy@^3.4.0:
     fs-extra "^8.1.0"
     globby "10.0.1"
     is-plain-object "^3.0.0"
+
+rollup-plugin-node-externals@^4.0.0:
+  version "4.1.1"
+  resolved "https://registry.yarnpkg.com/rollup-plugin-node-externals/-/rollup-plugin-node-externals-4.1.1.tgz#81d90eea6f99831a90206df1f0531fdcfc360d7c"
+  integrity sha512-hiGCMTKHVoueaTmtcUv1KR0/dlNBuI9GYzHUlSHQbMd7T7yomYdXCFnBisoBqdZYy61EGAIfz8AvJaWWBho3Pg==
+  dependencies:
+    find-up "^5.0.0"
 
 rollup-plugin-postcss@^3.1.8:
   version "3.1.8"
@@ -29664,7 +29704,7 @@ url-parse-lax@^3.0.0:
   dependencies:
     prepend-http "^2.0.0"
 
-url-parse@^1.4.3, url-parse@^1.4.4, url-parse@^1.4.7, url-parse@^1.5.1:
+url-parse@^1.4.3, url-parse@^1.4.4, url-parse@^1.5.1:
   version "1.5.3"
   resolved "https://registry.yarnpkg.com/url-parse/-/url-parse-1.5.3.tgz#71c1303d38fb6639ade183c2992c8cc0686df862"
   integrity sha512-IIORyIQD9rvj0A4CLWsHkBBJuNqWpFQe224b6j9t/ABmquIS0qDU2pY6kl6AuOrL5OkCXHMCFNe1jBcuAggjvQ==
